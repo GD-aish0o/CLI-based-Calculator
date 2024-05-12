@@ -1,0 +1,25 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "This is a simple CLI based calculator. created using typescript programming language & then compiling it to js.",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "daily",
+    "use",
+    "calculator",
+    "simple",
+    "CLI"
+  ],
+  "author": "Aqsa Qazi (GD-aish0o)",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^9.2.20"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7"
+  }
+}
