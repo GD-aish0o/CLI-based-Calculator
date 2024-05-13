@@ -1,5 +1,7 @@
 #! /usr/bin/env node
 
+// ln 1 has the shabang.
+
 import inquirer from "inquirer"; //calls inquirer
 
 const answer =await inquirer.prompt([
