@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 import inquirer from "inquirer"; //calls inquirer
 
 const answer =await inquirer.prompt([
