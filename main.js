@@ -1,5 +1,8 @@
-import inquirer from "inquirer"; //calls inquirer
-const answer = await inquirer.prompt([
+#! /usr/bin/env node
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var inquirer_1 = require("inquirer"); //calls inquirer
+var answer = await inquirer_1.default.prompt([
     { message: "Enter a digit.",
         type: "number",
         name: "amOne"
