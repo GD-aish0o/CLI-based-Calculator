@@ -1,13 +1,6 @@
-#! /usr/bin/env node
-
-// ln 1 has the shabang.
-
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var inquirer_1 = require("inquirer"); //calls inquirer
-var answer = await inquirer_1.default.prompt([
+#!/usr/bin/env node
+import inquirer from "inquirer";
+const answer = await inquirer.prompt([
     { message: "Enter a digit.",
         type: "number",
         name: "amOne"
