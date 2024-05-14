@@ -1,34 +1,33 @@
 #! /usr/bin/env node
 
-// ln 1 has the shabang.
-
-import inquirer from "inquirer"; //calls inquirer
+import inquirer from "inquirer";
 
 const answer =await inquirer.prompt([
-  { message: "Enter a digit.", 
-  type: "number", 
-  name: "amOne" 
-},
-  {
-    message: "Please select an operator.",
-    type: "list",
-    name: "Operators",
-    choices: ["Add", "Subtract", "Multiply", "Divide"]
+    { message: "Enter a digit.", 
+    type: 'number', 
+    name: "amOne" 
   },
-
-
-  { message: "Enter another digit.", 
-  type: "number", 
-  name: "amTwo" 
-}
-]);
-
-if (answer.Operators === "Add") {
-  console.log( "Your total amount is " , + answer.amOne + answer.amTwo);
-} else if (answer.Operators === "Subtract") {
-    console.log("Your total amount is " , + answer.amOne - answer.amTwo);
-} else if (answer.Operators === "Multiply") {
-  console.log("Your total amount is" ,
-   + answer.amOne * answer.amTwo);
-} else
-console.log("Your total amount is", + answer.amOne / answer.amTwo);
+    {
+      message: "Please select an operator.",
+      type: "list",
+      name: "Operators",
+      choices: ["Add", "Subtract", "Multiply", "Divide"]
+    },
+  
+  
+    { message: "Enter another digit.", 
+    type: "number", 
+    name: "amTwo" 
+  }
+  ]);
+  
+  if (answer.Operators === "Add") {
+    console.log( "Your total amount is " , + answer.amOne + answer.amTwo);
+  } else if (answer.Operators === "Subtract") {
+      console.log("Your total amount is " , + answer.amOne - answer.amTwo);
+  } else if (answer.Operators === "Multiply") {
+    console.log("Your total amount is" ,
+     + answer.amOne * answer.amTwo);
+  } else
+  console.log("Your total amount is", + answer.amOne / answer.amTwo);
+  
